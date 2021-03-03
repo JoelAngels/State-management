@@ -1,14 +1,12 @@
-import React from "react";
+import React, { useContext } from "react";
+import { MovieContext } from "./MovieContext";
 
-const Movie = ({ name, price, id }) => {
+const Movie = () => {
+  const [movies, setMovies] = useContext(MovieContext);
+
   return (
     <div>
-      <h3>Movie: {name}</h3>
-      <h3>Price: {price}</h3>
-      <h3>Id: {id}</h3>
-      {/* {movies.map((movie) => (
-        <li>{movie.name}</li>
-      ))} */}
+      <h1>List of movies are: {movies.length}</h1>
     </div>
   );
 };
