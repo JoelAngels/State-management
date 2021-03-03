@@ -6,17 +6,17 @@ export const MovieProvider = (props) => {
   const [movies, setMovies] = useState([
     {
       name: "Avengers Infinity War",
-      price: "7.5",
+      price: "$7.5",
       id: 1234,
     },
     {
       name: "Avengers End Game",
-      price: "7.5",
+      price: "$7.5",
       id: 4567,
     },
     {
       name: "Black Panther",
-      price: "7.5",
+      price: "$7.5",
       id: 891011,
     },
   ]);

@@ -1,12 +1,13 @@
 import React, { useContext } from "react";
 import { MovieContext } from "./MovieContext";
 
-const Movie = () => {
+const Movie = ({ name, price }) => {
   const [movies, setMovies] = useContext(MovieContext);
 
   return (
     <div>
-      <h1>List of movies are: {movies.length}</h1>
+      <h1>{name}</h1>
+      <h1>{price}</h1>
     </div>
   );
 };
